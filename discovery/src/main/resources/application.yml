@@ -7,3 +7,7 @@ client:
 service-url:
 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 server: port:8761
+
+spring:
+  config:
+    import: optinal:configserver:http://localhost:8888
