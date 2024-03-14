@@ -1,4 +1,4 @@
-ackage com.alibou.student;
+ackage com.alibou.school;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,23 +13,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-@RequestMapping("/api/v1/students")
+@RequestMapping("/api/v1/schools")
 @RequiredArgsConstructor
-public class StudentController {
+public class SchoolController {
 
-    private StudentService service;
+    private SchoolService service;
 
     @PostMapping
     @ResponseStatus(HttpStaus.CREATED)
     public void save(
-            @RequestBody Student student) {
+            @RequestBody School school) {
 
-        service.saveStudent(student);
+        service.saveSchool(school);
     }
 
     @GetMapping
-    public ResponseEntity<List<Student>> findAllStudents() {
-        return ResponseEntity.ok(service.findAllStudents());
+    public ResponseEntity<List<School>> findAllSchools() {
+        return ResponseEntity.ok(service.findAllSchools());
     }
 
 }
