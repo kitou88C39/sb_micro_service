@@ -11,6 +11,11 @@ public class StudentService {
 
     public void saveStudent(Student student) {
         repository.save(student);
+
+    }
+
+    public List<Student> findAllStudents(){
+        return repository.findAll()
     }
 
 }
