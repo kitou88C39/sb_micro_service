@@ -14,8 +14,14 @@ public class SchoolService {
 
     }
 
-    public List<School> findAllSchools(){
-        return repository.findAll()
+    public List<School> findAllSchools() {
+        return repository.findAll();
+
+    }
+
+    public FullschoolResponse findSchoolsWithStudents(Integer schoolId) {
+        return null;
+
     }
 
 }
