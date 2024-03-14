@@ -1,4 +1,4 @@
-ackage com.alibou.school;
+package com.alibou.school;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
