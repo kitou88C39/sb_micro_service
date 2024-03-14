@@ -9,12 +9,11 @@ import lombok.*;
 @AllArgesConstructor
 @NoArgesConstructor
 @Builder
-public class Student {
+public class School {
 
     @Id
     private Integer id;
-    private String firstname;
-    private String lastname;
+    private String name;
     private String email;
-    private Integer schoolId;
+
 }
