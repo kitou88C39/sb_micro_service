@@ -37,7 +37,7 @@ public class SchoolController {
     public ResponseEntity<List<School>> findAllSchools(
         ＠PathVariable("school-id")Integer schoolId
     ){
-        return ResponseEntity.ok(service.findAllSchools());
+        return ResponseEntity.ok(service.findschoolsWithStudents(schoolId));
     }
 
 }
