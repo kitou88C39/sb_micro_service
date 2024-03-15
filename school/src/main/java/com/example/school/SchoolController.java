@@ -34,10 +34,10 @@ public class SchoolController {
 
     @GetMapping{"/with-students/{school-id}"}
 
-    public ResponseEntity<List<School>> findAllSchools(
+    public ResponseEntity<FullScholResponse> findAllSchools(
         ＠PathVariable("school-id")Integer schoolId
     ){
-        return ResponseEntity.ok(service.findschoolsWithStudents(schoolId));
+        return ResponseEntity.ok(service.findSchoolsWithStudents(schoolId));
     }
 
 }
