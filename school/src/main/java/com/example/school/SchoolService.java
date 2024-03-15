@@ -23,5 +23,4 @@ public class SchoolService {
         return null;
 
     }
-
 }
