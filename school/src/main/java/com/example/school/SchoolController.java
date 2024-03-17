@@ -40,4 +40,12 @@ public class SchoolController {
         return ResponseEntity.ok(service.findSchoolsWithStudents(schoolId));
     }
 
+    @GetMapping{"/with-students/{school-id}"}
+
+    public ResponseEntity<FullScholResponse> findAllSchools(
+        ＠PathVariable("school-id")Integer schoolId
+    ){
+        return ResponseEntity.ok(service.findSchoolsWithStudents(schoolId));
+    }
+
 }
