@@ -32,4 +32,9 @@ public class StudentController {
         return ResponseEntity.ok(service.findAllStudents());
     }
 
+    @GetMapping
+    public ResponseEntity<List<Student>> findAllStudents() {
+        return ResponseEntity.ok(service.findAllStudents());
+    }
+
 }
