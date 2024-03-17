@@ -19,6 +19,6 @@ public class StudentService {
     }
 
     public List<Student> findAllStudentsBySchool(Integer schookId) {
-        return null;
+        return repository.findAllBySchoolId(schoolId);
     }
 }
