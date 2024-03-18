@@ -32,7 +32,10 @@ public class SchoolService {
                                 .email("NOT_FOUND")
                                 .build());
         var students = client.findAllStudentsBySchool(schoolId);
-        return FullSchollResponse.builder()
-
+        return FullSchoollResponse.builder()
+                .name(school.getName())
+                .email(school.getEmail())
+                .students(students)
+                .build();
     }
 }
