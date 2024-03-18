@@ -4,12 +4,15 @@ import lombok.RequiredArgsConstrucutor;
 import org.springframework.stereotype.Service;
 
 import com.alibou.school.School;
+import com.example.client.StudentClient;
 
 @Service
 @RequiredArgsConstrucutor
 public class SchoolService {
 
     private final SchoolRepository repository;
+
+    private StudentClient client
 
     public void saveStudent(School school) {
         repository.save(school);
@@ -28,7 +31,7 @@ public class SchoolService {
                                 .name("NOT_FOUND")
                                 .email("NOT_FOUND")
                                 .build());
-        var students = null;// find all the students from the student micro service
+        var students = client.findAllStudentsBySchool(schoolId);
         return null;
 
     }
