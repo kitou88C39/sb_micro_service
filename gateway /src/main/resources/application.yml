@@ -1,7 +1,6 @@
 eureka:
   client:
     register-with-eureka: false
-
 server:
 port:8222
 spring:
@@ -10,3 +9,12 @@ spring:
   discovery:
   locator:
   enabled: true
+routes:
+- id: students
+uri:http://localhost:8090
+predicates:
+- Path=/api/v1/students/**
+- id: students
+uri:http://localhost:8090
+predicates:
+- Path=/api/v1/students/**
