@@ -25,4 +25,4 @@ spring:
 
   application:
     confin:
-      students-url: http://localhost:80
+      students-url: http://localhost:8090/api/v1/students
