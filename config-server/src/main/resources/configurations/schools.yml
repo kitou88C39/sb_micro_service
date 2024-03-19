@@ -1,6 +1,5 @@
-
 server:
- port: 8070
+  port: 8070
 spring:
   application:
     name: schools
@@ -10,11 +9,10 @@ spring:
     username: username
     password: password
   jpa:
-    hibernate:
-      ddl-auto:create
+    hibernate: ddl-auto:create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-  application:
-    confin:
-      students-url: http://localhost:8222/api/v1/students
+application:
+  confing:
+    students-url: http://localhost:8222/api/v1/students
